@@ -16,5 +16,6 @@ class ScreenAnalyser:
         self.config.d.screenshot(screenshot_path)
         return screenshot_path
 
-    def get_ui_heirarchy():
-        pass
+    def get_ui_heirarchy(self):
+        xml = self.config.d.dump_heirarchy()
+        return xml
